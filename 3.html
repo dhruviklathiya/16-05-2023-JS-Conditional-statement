@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap year check</title>
+</head>
+
+<body>
+    <h1 id="info"></h1>
+    <script>
+        var aa = parseInt(prompt("FOR WHICH YEAR YOU WANNA CHECK IF IT'S LEAP YEAR OR NOT?"));
+        if (isNaN(aa)) {
+            document.getElementById('info').innerHTML = "PLEASE ENTER VALID NUMBER.";
+            document.getElementById('info').style.color = 'red';
+        }
+        else {
+            if (aa > 0) {
+                if (aa % 4 == 0) {
+                    // document.getElementById('info').innerHTML = "Itta leap yearrrr 😎"; // UTF-8 allows emoji
+                    document.getElementById('info').innerHTML = "ENTERED YEAR IS LEAP YEAR";
+                    document.getElementById('info').style.color = 'Green';
+                }
+                else {
+                    // document.getElementById('info').innerHTML = "Nopppppe 🙃 not a leap year"; // UTF-8 allows emoji
+                    document.getElementById('info').innerHTML = "ENTERED YEAR IS NOT LEAP YEAR.";
+                    document.getElementById('info').style.color = 'Coral';
+                }
+            }
+            else {
+                document.getElementById('info').innerHTML = "YEAR CANNOT BE ZERO OR NEGATIVE VALUE.";
+                document.getElementById('info').style.color = 'Red';
+            }
+        }
+    </script>
+</body>
+
+</html>

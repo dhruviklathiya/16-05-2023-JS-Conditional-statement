@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator without switchcase</title>
+</head>
+
+<body>
+    <h1 id="info"></h1>
+    <script>
+        var a = parseInt(prompt("Enter first value:"));
+        var b = parseInt(prompt("Enter second value:"));
+        var c = prompt("Enter one sign from following +,-,*,/")
+        var ans;
+        if (c == '+') {
+            ans = a + b;
+            document.getElementById('info').innerHTML = "Addition of both value is: " + ans;
+            document.getElementById('info').style.color = "Green";
+        }
+        else if (c == '-') {
+            ans = a - b;
+            document.getElementById('info').innerHTML = "Subtraction of both value is: " + ans;
+            document.getElementById('info').style.color = "Green";
+        }
+        else if (c == '*') {
+            ans = a * b;
+            document.getElementById('info').innerHTML = "Multiplication of both value is: " + ans;
+            document.getElementById('info').style.color = "Green";
+        }
+        else if (c == '/') {
+            ans = a / b;
+            document.getElementById('info').innerHTML = "Division of both value is: " + ans;
+            document.getElementById('info').style.color = "Green";
+        }
+        else {
+            document.getElementById('info').innerHTML = "Invalid input";
+            document.getElementById('info').style.color = "Red";
+        }
+    </script>
+</body>
+
+</html>

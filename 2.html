@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEN & ODD</title>
+</head>
+<body>
+    <h1 id="info"></h1>
+    <script>
+        var aa = parseFloat(prompt("ENTER NUMBER TO CHECK,NUMBER IS EVEN OR ODD:"));
+        if(isNaN(aa)){
+            document.getElementById('info').innerHTML = "PLEASE ENTER VALID NUMBER.";
+            document.getElementById('info').style.color = 'red';
+        }
+        else{
+            if(aa%2==0)
+        {
+            document.getElementById('info').innerHTML = "ENTERED NUMBER IS EVEN.";
+            document.getElementById('info').style.color = 'Green';
+        }
+        else
+        {
+            document.getElementById('info').innerHTML = "ENTERED NUMBER IS ODD.";
+            document.getElementById('info').style.color = 'Green';
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biggest number nester if else</title>
+</head>
+<body>
+    <h1 id="info"></h1>
+    <script>
+        var a = parseInt(prompt("Enter first value:"));
+        var b = parseInt(prompt("Enter second value:"));
+        var c = parseInt(prompt("Enter third value:"));
+        var d = parseInt(prompt("Enter fourth value:"));
+        if (isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d)) 
+        {
+            document.getElementById('info').innerHTML = "PLEASE ENTER VALID NUMBER.";
+            document.getElementById('info').style.color = 'red';
+        }  
+        else
+        {
+            if(a>b && (a>c && a>d)){
+                document.getElementById('info').innerHTML = "First value: "+a+ " is biggest value";
+                document.getElementById('info').style.color = "Green";
+            }
+            else{
+                if(b>a && (b>c && b>d)){
+                document.getElementById('info').innerHTML = "Second value: "+b+ " is biggest value";
+                document.getElementById('info').style.color = "Green";
+                }
+                else{
+                    if(c>a && (c>b && c>d)){
+                        document.getElementById('info').innerHTML = "Third value: "+c+ " is biggest value";
+                        document.getElementById('info').style.color = "Green";
+                    }
+                    else{
+                        document.getElementById('info').innerHTML = "Fourth value: "+d+ " is biggest value";
+                        document.getElementById('info').style.color = "Green";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

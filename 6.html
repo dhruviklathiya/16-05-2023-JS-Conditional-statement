@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+</head>
+<body>
+    <h1 id="info"></h1>
+<script>
+    var phy = parseFloat(prompt("Marks of Physics out of 100:"));
+    var chem = parseFloat(prompt("Marks of Chemistry out of 100:"));
+    var bio = parseFloat(prompt("Marks of Biology out of 100:"));
+    var maths = parseFloat(prompt("Marks of Mathematics out of 100:"));
+    var comp = parseFloat(prompt("Marks of Computer out of 100:"));
+    var result = (phy+chem+bio+maths+comp)/5;
+    if (isNaN(phy) || isNaN(chem) || isNaN(bio) || isNaN(maths) || isNaN(comp)) {
+            document.getElementById('info').innerHTML = "PLEASE ENTER VALID NUMBER.";
+            document.getElementById('info').style.color = 'red';
+    }
+    else 
+    {
+        if(result>=90){
+            document.getElementById('info').innerHTML = "Grade A, FINAL RESULT:" + result;
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(result>=80){
+            document.getElementById('info').innerHTML = "Grade B, FINAL RESULT:" + result;
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(result>=70){
+            document.getElementById('info').innerHTML = "Grade C, FINAL RESULT:" + result;
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(result>=60){
+            document.getElementById('info').innerHTML = "Grade D, FINAL RESULT:" + result;
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(result>=50){
+            document.getElementById('info').innerHTML = "Grade E, FINAL RESULT:" + result;
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(result>=40){
+            document.getElementById('info').innerHTML = "Grade F, FINAL RESULT:" + result;
+            document.getElementById('info').style.color = 'Green';
+        }
+        else{
+            document.getElementById('info').innerHTML = "FAILED";
+            document.getElementById('info').style.color = 'Red';
+        }
+    }
+</script>
+</body>
+</html>

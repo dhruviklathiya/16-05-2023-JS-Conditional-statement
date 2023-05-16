@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEEK DAY NAME</title>
+</head>
+<body>
+    <h1 id="info"></h1>
+    <script>
+        var a = prompt("Enter letter out of this M,T,W,t,F,S,s");
+        if(a =='M')
+        {
+            document.getElementById('info').innerHTML = "Monday";
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(a == 'T')
+        {
+            document.getElementById('info').innerHTML = "Tuesday";
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(a == 'W')
+        {
+            document.getElementById('info').innerHTML = "Wednesday";
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(a == 't')
+        {
+            document.getElementById('info').innerHTML = "Thursday";
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(a == 'F')
+        {
+            document.getElementById('info').innerHTML = "Friday";
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(a == 'S')
+        {
+            document.getElementById('info').innerHTML = "Saturday";
+            document.getElementById('info').style.color = 'Green';
+        }
+        else if(a == 's')
+        {
+            document.getElementById('info').innerHTML = "Sunday";
+            document.getElementById('info').style.color = 'Green';
+        }
+        else{
+            document.getElementById('info').innerHTML = "Invalid input";
+            document.getElementById('info').style.color = 'Red';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting eligibility</title>
+</head>
+<body>
+    <h1 id="info"></h1>
+    <script>
+        var a = parseInt(prompt("Enter your age:"));
+        if (isNaN(a)) {
+            document.getElementById('info').innerHTML = "PLEASE ENTER VALID NUMBER.";
+            document.getElementById('info').style.color = 'red';
+        }
+        else 
+        {
+            if(a>0){
+                if(a>=18){
+                document.getElementById('info').innerHTML = "You can vote.";
+                document.getElementById('info').style.color = 'Green';
+                }
+                else{
+                document.getElementById('info').innerHTML = "You can not vote.";
+                document.getElementById('info').style.color = 'Red';
+                }
+            }
+            else{
+                document.getElementById('info').innerHTML = "AGE CANNOT BE ZERO OR NEGATIVE.";
+                document.getElementById('info').style.color = 'Red';
+            }
+        }
+    </script>
+</body>
+</html>

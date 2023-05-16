@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="info"></h1>
+    <script>
+        var a = parseInt(prompt("Enter first angle value:"));
+        var b = parseInt(prompt("Enter second angle value:"));
+        var c = parseInt(prompt("Enter third angle value"));
+        if(isNaN(a) || isNaN(b) || isNaN(c)){
+            document.getElementById('info').innerHTML = "PLEASE ENTER VALID NUMBER.";
+            document.getElementById('info').style.color = 'red';
+        }
+        else
+        {
+            if((a+b+c)==180)
+            {
+                document.getElementById('info').innerHTML = "Triangle is valid.";
+                document.getElementById('info').style.color = "Green";
+            }
+            else{
+                document.getElementById('info').innerHTML = "Triangle is not valid.";
+                document.getElementById('info').style.color = "Red";
+            }
+        }
+     </script>
+</body>
+</html>
